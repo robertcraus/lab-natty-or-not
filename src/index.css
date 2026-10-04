@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6f7ef;
+  --color-ink: #171a17;
+  --color-muted: #62675d;
+  --color-line: #dfe3d8;
+  --color-lime: #e7f23a;
+  --color-lime-dark: #697300;
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+  body { margin: 0; background: var(--color-paper); color: var(--color-ink); -webkit-font-smoothing: antialiased; }
+  ::selection { background: var(--color-lime); color: var(--color-ink); }
+  :focus-visible { outline: 3px solid var(--color-lime-dark); outline-offset: 4px; }
+  button, a, input, summary { -webkit-tap-highlight-color: transparent; }
+  button { cursor: pointer; }
+}
+
+@layer components {
+  .shell { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12; }
+  .eyebrow { @apply font-mono text-[10px] font-medium uppercase tracking-[0.14em] sm:text-xs; }
+  .section-title { @apply text-3xl font-semibold leading-[1.15] tracking-[-0.04em] sm:text-4xl; }
+  .button-primary { @apply inline-flex min-h-13 items-center justify-center gap-3 rounded-xl bg-lime px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-[#d8e42d] disabled:cursor-wait disabled:opacity-65; }
+  .field { @apply block min-h-12 w-full rounded-xl border border-line bg-paper/60 px-4 py-3 text-sm text-ink outline-none transition-colors placeholder:text-muted/80 focus:border-lime-dark focus:ring-2 focus:ring-lime/60 aria-invalid:border-red-600 disabled:opacity-60; }
+  .marker { background-image: linear-gradient(transparent 60%, var(--color-lime) 60%, var(--color-lime) 92%, transparent 92%); box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+  .skip-link { @apply fixed left-4 top-4 z-50 -translate-y-24 rounded-lg bg-ink px-5 py-3 text-white focus:translate-y-0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
