@@ -1,4 +1,4 @@
-# 🧲 Funil Natty: A Importância da IA na Criação de Sites para Funil de Leads
+[# 🧲 Funil Natty: A Importância da IA na Criação de Sites para Funil de Leads
 
 ## 📒 Descrição
 Este projeto explora o impacto das Inteligências Artificiais Generativas na construção de sites focados em conversão. O objetivo foi criar uma Landing Page completa e persuasiva utilizando IA, demonstrando que é possível unir copywriting humanizado e geração de código modular (React + Tailwind) de forma 100% "Natty" (natural e autêntica).
@@ -19,3 +19,4 @@ O resultado é uma Landing Page moderna, limpa e totalmente focada em conversão
 
 ## 💭 Reflexão
 O maior desafio de criar algo "Natty" (natural) com IA é fugir dos padrões genéricos. A Inteligência Artificial é uma ferramenta formidável para estruturar código e texto, mas a estratégia de conversão e a revisão da arquitetura exigem uma visão crítica humana para garantir que o resultado final seja profissional e verdadeiramente funcional.
+](https://lab-natty-or-not-dio.vercel.app/)
